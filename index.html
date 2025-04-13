@@ -1,20 +1,16 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PLC AR Demo</title>
-  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js/aframe/build/aframe-ar.js"></script>
-</head>
-<body style="margin: 0; overflow: hidden;">
-  <a-scene embedded arjs>
-    <a-marker type="pattern" url="marker/marker_mezcladora.patt">
-      <a-text value="PLC PRUEBA AR" position="0 0.5 0.1" color="yellow"></a-text>
-      <a-text value="Conectar 24VDC aquí" position="0 1 0" color="red"></a-text>
-    </a-marker>
-    <a-entity camera></a-entity>
-  </a-scene>
-</body>
+<html>
+  <head>
+    <title>AR Demo Simple</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js@3.3.2/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+        <a-text value="¡Hola desde AR!" color="cyan" position="0 0.5 0"></a-text>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
 </html>
